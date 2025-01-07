@@ -4,7 +4,7 @@ def power_set(a: set) -> list[any]:
     """
     result = []
     _power_set(result, a)
-    result = None + sorted(result, key=len)
+    result = [None] + sorted(result, key=len)
     return result
 
 def _power_set(result: list, a: set) -> None:
